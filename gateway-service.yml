@@ -26,6 +26,8 @@ spring:
         uri: lb://transaction-service
         predicates:
         - Path=/m3/**
+        filters:
+        - RewritePath=/m3/(?<x>.*), /$\{x}
       - id: withdrawal-service
         uri: lb://withdrawal-service
         predicates:
