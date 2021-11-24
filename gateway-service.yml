@@ -16,24 +16,25 @@ spring:
       - id: client-service
         uri: lb://client-service
         predicates:
-        - Path=/clients/**
+        - Path=/m1/**
       - id: product-service
-        uri: lb://product-service
+#        uri: lb://product-service
+        uri: http://localhost:8091
         predicates:
-        - Path=/products/**
+        - Path=/m2/**
       - id: transaction-service
         uri: lb://transaction-service
         predicates:
-        - Path=/transactions/**
+        - Path=/m3/**
       - id: withdrawal-service
         uri: lb://withdrawal-service
         predicates:
-        - Path=/withdrawals/**
+        - Path=/m4/**
       - id: deposit-service
         uri: lb://deposit-service
         predicates:
-        - Path=/deposits/**
+        - Path=/m5/**
       - id: paymentproduct-service
         uri: lb://paymentproduct-service
         predicates:
-        - Path=/paymentproducts/**
+        - Path=/m6/**
