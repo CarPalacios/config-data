@@ -13,27 +13,27 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: client-service
-          uri: lb://client-service
-          predicates:
-            - Path=/clients/**
-        - id: product-service
-          uri: lb://product-service
-          predicates:
-            - Path=/products/**
-        - id: transaction-service
-          uri: lb://transaction-service
-          predicates:
-            - Path=/transactions/**
-        - id: withdrawal-service
-          uri: lb://withdrawal-service
-          predicates:
-            - Path=/withdrawals/**
-        - id: deposit-service
-          uri: lb://deposit-service
-          predicates:
-            - Path=/deposits/**
-        - id: paymentproduct-service
-          uri: lb://paymentproduct-service
-          predicates:
-            - Path=/paymentproducts/**
+      - id: client-service
+        uri: lb://client-service
+        predicates:
+        - Path=/clients/**
+      - id: product-service
+        uri: lb://product-service
+        predicates:
+        - Path=/products/**
+      - id: transaction-service
+        uri: lb://transaction-service
+        predicates:
+        - Path=/transactions/**
+      - id: withdrawal-service
+        uri: lb://withdrawal-service
+        predicates:
+        - Path=/withdrawals/**
+      - id: deposit-service
+        uri: lb://deposit-service
+        predicates:
+        - Path=/deposits/**
+      - id: paymentproduct-service
+        uri: lb://paymentproduct-service
+        predicates:
+        - Path=/paymentproducts/**
