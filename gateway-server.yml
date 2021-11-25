@@ -18,41 +18,41 @@ spring:
       - id: client-service
         uri: http://localhost:8090
         predicates:
-        - Path=/clients/**
+        - Path=/proyect/**
         filters:
-        - RewritePath=/clients/(?<x>.*), /$\{x}
+        - RewritePath=/proyect/(?<x>.*), /$\{x}
         
       - id: product-service
         uri: http://localhost:8091
         predicates:
-        - Path=/products/**
+        - Path=/proyect/**
         filters:
-        - RewritePath=/products/(?<x>.*), /$\{x}
+        - RewritePath=/proyect/(?<x>.*), /$\{x}
         
       - id: transaction-service
         uri: http://localhost:8092
         predicates:
-        - Path=/transactions/**
+        - Path=/proyect/**
         filters:
-        - RewritePath=/transactions/(?<x>.*), /$\{x}
+        - RewritePath=/proyect/(?<x>.*), /$\{x}
         
       - id: withdrawal-service
         uri: http://localhost:8093
         predicates:
-        - Path=/withdrawals/**
+        - Path=/proyect/**
         filters:
-        - RewritePath=/withdrawals/(?<x>.*), /$\{x}
+        - RewritePath=/proyect/(?<x>.*), /$\{x}
         
       - id: deposit-service
         uri: http://localhost:8094
         predicates:
-        - Path=/deposits/**
+        - Path=/proyect/**
         filters:
-        - RewritePath=/deposits/(?<x>.*), /$\{x}
+        - RewritePath=/proyect/(?<x>.*), /$\{x}
         
       - id: paymentproduct-service
         uri: http://localhost:8095
         predicates:
-        - Path=/paymentproducts/**
+        - Path=/proyect/**
         filters:
-        - RewritePath=/paymentproducts/(?<x>.*), /$\{x}
+        - RewritePath=/proyect/(?<x>.*), /$\{x}
