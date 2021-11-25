@@ -25,7 +25,7 @@ spring:
       - id: product-service
         uri: http://localhost:8091
         predicates:
-        - Path=/product/**
+        - Path=/products/**
         filters:
         - RewritePath=/products/(?<x>.*), /$\{x}
         
