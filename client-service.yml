@@ -26,5 +26,4 @@ resilience4j:
         minimumNumberOfCalls: 4
         waitDurationInOpenState: 2s
         failureRateThreshold: 50
-        eventConsumerBufferSize: 10
-    
+        eventConsumerBufferSize: 10   
