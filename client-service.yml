@@ -7,7 +7,7 @@ spring:
   data:
     mongodb:
 #      uri: mongodb://localhost:27017/db_client
-      uri: mongodb://localhost:12500/db_client
+      uri: mongodb://192.168.208.1:12500/db_client
   
 eureka:
   client: 
