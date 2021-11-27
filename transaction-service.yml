@@ -6,7 +6,8 @@ spring:
     name: transaction-service   
   data:
     mongodb:
-      uri: mongodb://localhost:27017/db_transaction
+      uri: mongodb://192.168.208.1:27017/db_transaction
+#      uri: mongodb://localhost:27017/db_transaction
 
 eureka:
   client: 

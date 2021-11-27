@@ -6,7 +6,8 @@ spring:
     name: paymentproduct-service
   data:
     mongodb:
-      uri: mongodb://localhost:27017/db_paymentproduct
+      uri: mongodb://192.168.208.1:27017/db_paymentproduct
+#      uri: mongodb://localhost:27017/db_paymentproduct
       
 eureka:
   client: 
