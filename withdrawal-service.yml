@@ -6,7 +6,7 @@ spring:
     name: withdrawal-service   
   data:
     mongodb:
-      uri: mongodb://192.168.208.1:27017/db_withdrawal
+      uri: mongodb://192.168.208.1:12500/db_withdrawal
 #      uri: mongodb://localhost:27017/db_withdrawal
 
 eureka:

@@ -6,7 +6,7 @@ spring:
     name: deposit-service    
   data:
     mongodb:
-      uri: mongodb://192.168.208.1:27017/db_deposit
+      uri: mongodb://192.168.208.1:12500/db_deposit
 #      uri: mongodb://localhost:27017/db_deposit
       
 eureka:
