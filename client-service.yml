@@ -7,12 +7,12 @@ spring:
   data:
     mongodb:
 #      uri: mongodb://localhost:27017/db_client
-      uri: mongodb://192.168.208.1:12500/db_client
+      uri: mongodb://192.168.1.18:12500/db_client
   
 eureka:
   client: 
     service-url:
-      defaultZone: http://192.168.208.1:8761/eureka
+      defaultZone: http://192.168.1.18:8761/eureka
 #        defaultZone: http://localhost:8761/eureka
     registry-with-eureka: true
 
