@@ -1,0 +1,17 @@
+server:
+  port: 8097
+  
+spring:
+  application:
+    name: bootcoin-service
+  data:
+    mongodb:
+#      uri: mongodb://localhost:27017/db_client
+      uri: mongodb://localhost:12500/db_bootcoin
+  
+eureka:
+  client: 
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+#        defaultZone: http://localhost:8761/eureka
+    registry-with-eureka: true
